@@ -3,7 +3,7 @@ html,body{
     height: 100%;
 }
 body{
-    background-image: url(img/background.jpg);
+    background-image: url(./img/background.jpg);
     background-attachment: fixed;  
 }
 
@@ -35,7 +35,7 @@ body{
 .twich-pic{
     width: 300px;
     height: 180px;
-    background-image: url(img/404_preview-320x180.jpg);
+    background-image: url(./img/404_preview-320x180.jpg);
     
 }
 .Name{
