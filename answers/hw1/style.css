@@ -1,0 +1,65 @@
+html,body{
+    margin: 0;
+    height: 100%;
+}
+body{
+    background-image: url(img/background.jpg);
+    background-attachment: fixed;  
+}
+
+.bg{
+    background-color:rgba(0,0,0,0.5); 
+    width: 100%;
+    height: 1080px; 
+    left: 0;
+    top: 0;
+}
+.channel{
+    box-sizing: border-box;
+    width: 100%;
+    height: inherit;
+    display: flex;
+    padding: 0 35px;
+    justify-content: center;
+    align-content:center;
+    flex-wrap: wrap;
+}
+.channel-box{
+    box-sizing: border-box;
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+   
+    
+}
+.twich-pic{
+    width: 300px;
+    height: 180px;
+    background-image: url(img/404_preview-320x180.jpg);
+    
+}
+.Name{
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    margin-top:180px;
+    width: 300px;
+    height: 70px;
+    display: inline-flex;
+    flex-direction: row;
+}
+.Name img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+   
+    
+}
+
+.Name p{
+    color: white;
+    margin: 10px;
+    font-size: 13px; 
+    
+}
