@@ -1,0 +1,86 @@
+/*背景圖*/
+body{
+    background-image: url(./img/background.jpg);
+    background-attachment: fixed;  
+    margin: 0;
+}
+/*幫背景遮上一層黑色(透明度為0.5)*/
+.bg{
+    background-color:rgba(0,0,0,0.5); 
+    width: 100%;
+    min-height: 100vh; 
+}
+/*全部方框的排版*/
+.channel{
+  display:-webkit-box;  /* OLD-IOS6-,Safari 3.1-6*/
+  display:-ms-flexbox;  /*IE10*/
+  display:-webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+*/
+  display:flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+  flex-wrap: wrap;      /*自動換行*/
+  justify-content: space-around; /*水平對齊*/
+  padding-top: 50px;  
+  margin: 0 auto;     
+  width: 1000px;     
+}
+ /*方框*/
+.channel-box{
+    width: 300px;
+    margin-bottom: 25px;
+    
+}
+
+.channel-box:hover{
+    box-shadow:2px 2px 5px 5px rgba(0,0,0,0.3);
+    -webkit-filter:brightness(150%);     
+    filter:brightness(150%);             /*變亮*/
+    -webkit-transition:box-shadow 1s;    /*Safari*/
+    transition:box-shadow 1s;            /*1秒後產生陰影*/
+    -webkit-transition:filter 1s;        /*Safari*/
+    transition:filter 1s;                /*1秒後方框變亮*/
+}
+/*第一個方框*/
+.channel-box:nth-child(1):hover{
+    transition-delay:1s;         /*使hover晚一秒才發生效果*/
+    -moz-transition-delay:1s;    /*Firefox 4*/
+    -webkit-transition-delay:1s; /*safari,chrome*/
+    -o-transition-delay:1s;      /*Opera*/
+    background: aquamarine;
+}
+/*最右方的方框*/
+.channel-box:nth-child(3n){
+    margin-right: 0px;   /*最右方的框沒有邊界*/
+}
+/*twitch圖*/
+.twitch-pic {
+    width: 100%;
+    height: 180px;
+    background-image: url(./img/404_preview-320x180.jpg);
+}
+/*黑色區塊*/
+.bottom{
+    display:-webkit-box;  /* OLD-IOS6-,Safari 3.1-6*/
+    display:-ms-flexbox;  /*IE10*/
+    display:-webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+*/
+    display:flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    align-items:center;   /*垂直對齊*/
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+   
+}
+
+/*頭像*/
+.Name-pic img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+/*文字*/
+.text{
+    color: white;
+    font-size: 13px; 
+    margin-left: 10px;
+}
+/*頻道名稱*/
+.channel-name{
+    margin-bottom: 10px;
+}
