@@ -1,0 +1,69 @@
+body {
+  background-image: url(../img/background.jpg);
+  background-attachment: fixed;
+  margin: 0; }
+
+.bg {
+  height: auto;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100vh; }
+
+.channel {
+  display: -webkit-flex;
+  display: flex;
+  height: auto;
+  width: 1000px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 50px;
+  margin: 0 auto; }
+
+.channel-box {
+  -webkit-transition: box-shadow 1s;
+  transition: box-shadow 1s;
+  -webkit-transition: filter 1s;
+  transition: filter 1s;
+  height: auto;
+  width: 300px;
+  margin-bottom: 25px; }
+  .channel-box:hover {
+    -webkit-filter: brightness(1.5);
+    filter: brightness(1.5);
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.3); }
+  .channel-box:nth-child(1) {
+    transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -webkit-transition-delay: 1s;
+    -o-transition-delay: 1s; }
+    .channel-box:nth-child(1):hover {
+      background: aquamarine; }
+  .channel-box:nth-child(3n) {
+    margin-right: 0px; }
+
+.twitch-pic {
+  height: 180px;
+  width: 100%;
+  background-image: url(../img/404_preview-320x180.jpg); }
+
+.bottom {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px; }
+
+.Name-pic img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%; }
+
+.text {
+  color: white;
+  font-size: 13px;
+  margin-left: 10px; }
+
+.channel-name {
+  margin-bottom: 10px; }
+
+/*# sourceMappingURL=style1.css.map */
