@@ -1,0 +1,76 @@
+@charset "UTF-8";
+body {
+  background-image: url(../img/background.jpg);
+  background-attachment: fixed;
+  margin: 0; }
+
+.bg {
+  height: auto;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100vh; }
+
+.channel {
+  display: -webkit-flex;
+  display: flex;
+  height: auto;
+  width: 1000px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 50px;
+  margin: 0 auto; }
+
+.channel-box {
+  -webkit-transition: box-shadow 1s;
+  transition: box-shadow 1s;
+  -webkit-transition: filter 1s;
+  transition: filter 1s;
+  height: auto;
+  width: 300px;
+  margin-bottom: 25px;
+  cursor: pointer; }
+  .channel-box:hover {
+    -webkit-filter: brightness(1.5);
+    filter: brightness(1.5);
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.3); }
+  .channel-box:nth-child(3n) {
+    margin-right: 0px; }
+
+.twitch-pic {
+  height: 180px;
+  width: 100%; }
+  .twitch-pic img {
+    height: 180px;
+    width: 100%; }
+
+.bottom {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px; }
+
+.Name-pic img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%; }
+
+.text {
+  color: white;
+  font-size: 16px;
+  margin-left: 10px;
+  font-family: "微軟正黑體"; }
+
+.channel-name {
+  height: auto;
+  width: 230px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.empty-box:hover {
+  box-shadow: 0px 0px 0px 0px;
+  cursor: default; }
+
+/*# sourceMappingURL=style1.css.map */

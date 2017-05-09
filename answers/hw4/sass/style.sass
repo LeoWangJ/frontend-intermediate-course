@@ -1,0 +1,87 @@
+@charset "UTF-8"
+
+
+
+@mixin size($height,$width)
+    height: $height
+    width: $width
+    
+@mixin flex()
+    display: -webkit-flex
+    display: flex 
+
+@mixin transition($method,$time)
+    -webkit-transition: $method $time  /*Safari*/
+    transition: $method $time 
+
+@mixin transition-delay($time)
+    transition-delay: $time         /*使hover晚一秒才發生效果*/
+    -moz-transition-delay: $time    /*Firefox 4*/
+    -webkit-transition-delay: $time /*safari,chrome*/
+    -o-transition-delay: $time      /*Opera*/
+
+@mixin filter($method)
+    -webkit-filter: $method   
+    filter: $method
+
+body
+    background-image: url(../img/background.jpg)
+    background-attachment: fixed
+    margin: 0
+.bg
+    @include size(auto,100%)
+    background-color: rgba(0,0,0,0.5)
+    min-height: 100vh
+.channel
+    @include flex()
+    @include size(auto,1000px)
+    flex-wrap: wrap
+    justify-content: space-around
+    padding-top: 50px  
+    margin: 0 auto
+    
+  
+.channel-box
+    @include transition(box-shadow,1s)
+    @include transition(filter,1s)
+    @include size(auto,300px)
+    margin-bottom: 25px
+    cursor: pointer
+    &:hover
+        @include filter(brightness(1.5))  
+        box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.3)
+    &:nth-child(3n)
+        margin-right: 0px
+
+.twitch-pic
+    @include size(180px,100%)
+    img
+        @include size(180px,100%)
+    
+
+.bottom
+    @include flex()
+    align-items: center
+    background-color: rgba(0,0,0,0.5)
+    padding: 10px
+.Name-pic
+    img
+        @include size(50px,50px)
+        border-radius: 50%
+        
+.text
+    color: white
+    font-size: 16px 
+    margin-left: 10px
+    font-family: '微軟正黑體' 
+.channel-name
+    @include size(auto,230px)
+    margin-bottom: 10px
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+.empty-box
+    &:hover
+        box-shadow: 0px 0px 0px 0px
+        cursor: default 
+    
