@@ -4,7 +4,7 @@ var clientID='qfj87a6v7p239o85ntks6zrow2nsex';
 var Offset=0;
 //一次只抓20筆
 var Limit=20;
-//因為scroll滾動時,在到底之前的高度(200px)都會觸發滾動效果,而導致一次做太多次AJAX請求.所以設置此來控制連續請求的bug
+//因為scroll滾動時,在到底之前的高度都會觸發滾動效果,而導致一次做太多次AJAX請求.所以設置此來控制連續請求的bug
 var isloading=false;
     
 function Ajax(){
